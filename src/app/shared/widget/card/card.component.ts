@@ -23,7 +23,7 @@ export class CardComponent implements OnInit{
         type: 'bar'
       },
       title: {
-        text: 'CHART1',
+        text: 'CHART 1',
         align: 'center'
       },
       credits:{

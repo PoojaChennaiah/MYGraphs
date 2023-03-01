@@ -73,7 +73,8 @@ import { HttpClientModule } from '@angular/common/http';
     Card2Component,
     Card3Component,
     Card4Component,
-    AccordionComponent
+    AccordionComponent,
+    Card5Component
   ]
 })
 export class SharedModule { }

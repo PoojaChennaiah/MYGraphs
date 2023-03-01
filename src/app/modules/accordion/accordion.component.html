@@ -1,0 +1,26 @@
+<h2>Select Parameter</h2>
+<mat-form-field appearance="outline" style="height: 50px!important;">
+  <mat-label>Search</mat-label>
+  <input matInput placeholder="Placeholder">
+  <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+
+<cdk-accordion class="example-accordion">
+  <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+    class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+    [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+    <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+      <mat-icon>{{accordionItem.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+      {{ item }}
+    </div>
+    <mat-divider></mat-divider>
+    <div class="example-accordion-checkbox" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
+      [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+      <div *ngFor="let name of Name; let index = index; let even=even; let odd=odd;">
+        <mat-checkbox class="checklist-leaf-node">{{name}}</mat-checkbox><span class="material-icons"
+          [ngClass]="{ even: even, odd: odd }">circle</span><mat-divider
+          style="border-top-style: ridge;border-top-width: 2px;"></mat-divider><br>
+      </div>
+    </div>
+  </cdk-accordion-item>
+</cdk-accordion>

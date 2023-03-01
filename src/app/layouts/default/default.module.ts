@@ -9,6 +9,8 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { HttpClientModule, HttpErrorResponse } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,10 +22,12 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     CommonModule,
     RouterModule,
+    HighchartsChartModule,
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
     FlexLayoutModule,
+    HttpClientModule,
     MatCardModule,
 
   ]

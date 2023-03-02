@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { PageComponent } from './modules/page/page.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { CardComponent } from './shared/widget/card/card.component';
 import { Card3Component } from './shared/widget/card3/card3.component';
@@ -23,8 +24,8 @@ const routes: Routes = [{
     path:'spline',
     component:SplinegraphComponent
   },{
-    path:'donut',
-    component:DonutchartComponent
+    path:'page',
+    component:PageComponent
   },{
     path:'card',
     component:Card5Component

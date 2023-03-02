@@ -49,7 +49,7 @@ export class PostsComponent implements OnInit {
         data:[]
       }
     ],
-    colors:['#FFC300','#18C6DB','#0B75C8'],
+    colors:['#D2AF02','#18C6DB','#0B75C8'],
   }
 
   ngOnInit(): void {

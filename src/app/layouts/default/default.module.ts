@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HttpClientModule, HttpErrorResponse } from '@angular/common/http';
+import { PageComponent } from 'src/app/modules/page/page.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HttpClientModule, HttpErrorResponse } from '@angular/common/http';
     DefaultComponent,
     DashboardComponent,
     PostsComponent,
+    PageComponent
   ],
   imports: [
     CommonModule,

@@ -27,6 +27,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { HistogramComponent } from './widget/histogram/histogram.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     Card3Component,
     Card4Component,
     Card5Component,
-    AccordionComponent
+    AccordionComponent,
+    HistogramComponent
   ],
   imports: [
     CommonModule,

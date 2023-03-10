@@ -9,6 +9,7 @@ import { Card3Component } from './shared/widget/card3/card3.component';
 import { Card4Component } from './shared/widget/card4/card4.component';
 import { Card5Component } from './shared/widget/card5/card5.component';
 import { DonutchartComponent } from './shared/widget/donutchart/donutchart.component';
+import { HistogramComponent } from './shared/widget/histogram/histogram.component';
 import { SplinegraphComponent } from './shared/widget/splinegraph/splinegraph.component';
 
 const routes: Routes = [{
@@ -28,7 +29,7 @@ const routes: Routes = [{
     component:PageComponent
   },{
     path:'card',
-    component:Card5Component
+    component:HistogramComponent
   }
 
 ]
